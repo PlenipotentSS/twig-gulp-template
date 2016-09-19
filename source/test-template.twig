@@ -1,0 +1,100 @@
+{# New Invite Email #}
+{% extends "layouts/master.twig" %}
+
+{% block page %}
+  <!-- content -->
+  <div class="content">
+    <table>
+      <tr>
+        <td>
+          <p>Hi *|TEAM_MEMBER_FIRST_NAME|*,</p>
+          <p><span id="member_name">*|FROM_USER_FIRST_NAME|*</span> added you to their <a href="https://goelevator.com">Elevator</a>. This means you are one of the few people they would like to work with again.</p>
+          <div align="center">
+            
+
+            <div class="card-compare-container">
+              <!-- Content Cards -->
+              <table>
+                <tr>
+                  <td>
+                    <article class="team-card">
+                      <div class="team-card-content">
+                        <div class="front">
+                          <header class="team-card-image avatar-image">
+                            *|IF:FROM_USER_AVATAR|*
+                            <img src="*|FROM_USER_AVATAR|*" alt="" title="">
+                            *|ELSE:|*
+                            <span class="noavatar"><span class="noavatar-letter teammember-letter">*|FROM_USER_INITIAL|*</span></span>
+                            *|END:IF|*
+                          </header>
+                          <div class="team-card-meta flex-container">
+                            <div class="team-card-flex">
+                              <h3 class="heading teammember-name">*|FROM_USER_NAME|*</h3>
+                              <h4 class="team-card-skill teammember-skill">*|FROM_USER_INDUSTRY|*</h4>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </article>
+
+                  </td>
+                  <td>
+
+                    <article class="team-card">
+                      <div class="team-card-content">
+                        <div class="front">
+                          <header class="team-card-image avatar-image">
+                            <span class="noavatar"><span class="noavatar-letter teammember-letter">*|TEAM_MEMBER_INITIAL|*</span></span>
+                          </header>
+                          <div class="team-card-meta flex-container">
+                            <div class="team-card-flex">
+                              <h3 class="heading">You</h3>
+                              <h4 class="team-card-skill teammember-skill">*|TEAM_MEMBER_INDUSTRY|*</h4>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </article>
+
+                  </td>
+                </tr>
+              </table>
+              
+              <!-- /Content Cards -->
+            </div>
+            
+            
+            <!-- button -->
+            <table class="btn-primary" cellpadding="0" cellspacing="0" border="0">
+              <tr>
+                <td>
+                  <a href="https:*|ENCODED_INVITATION|*" style="text-decoration:none;">   Accept the invite   </a>
+                </td>
+              </tr>
+            </table>
+            <!-- /button -->
+          </div>
+          
+          
+          
+          <div align="center">
+            <a href="https://goelevator.com/?utm_source=user_invite&utm_medium=email&utm_campaign=product"><img src="https://s3-us-west-2.amazonaws.com/elevatorassets/Elevator_video.png" alt="Elevator Overview Video" style="width:455px; height:234px; "></a>
+            <a href="https://goelevator.com/?utm_source=user_invite&utm_medium=email&utm_campaign=product" style="text-decoration:none;"><h3 style="text-align:center; margin-top:-5px;color: #00c2ec; font-weight: 700;">Click to see how Elevator works</h3></a>
+          </div>
+          <br>
+          
+          <div align="left">
+            <p>
+              Elevator empowers you to choose who you want to work with, then privately finds great job opportunities for you and your team.
+              <br><br>
+              Because you’ve been identified as a highly desirable co-worker we are already looking for interesting team opportinites at our <a href="https://goelevator.com/#partners?utm_source=user_invite&utm_medium=email&utm_campaign=product">amazing partners</a>.
+              <br><br>
+              Claim your account and build your dream team.
+            </p>
+          </div>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <!-- /content -->
+{% endblock %}

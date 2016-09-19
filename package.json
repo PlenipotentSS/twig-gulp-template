@@ -1,0 +1,25 @@
+{
+  "package_name": "twig-gulp-template",
+  "devDependencies": {
+    "gulp": "^3.6.0",
+    "gulp-autoprefixer": "0.0.7",
+    "gulp-clean": "^0.2.4",
+    "gulp-jshint": "^1.5.3",
+    "gulp-livereload": "latest",
+    "gulp-webserver": "latest",
+    "gulp-minify-css": "^0.3.1",
+    "gulp-notify": "latest",
+    "gulp-include": "latest",
+    "gulp-rename": "^1.2.0",
+    "gulp-replace": "latest",
+    "fs": "latest",
+    "gulp-twig": "^0.3.0",
+    "gulp-sass": "latest",
+    "gulp-uglify": "^0.2.1",
+    "gulp-util": "^2.2.14",
+    "tiny-lr": "0.0.5"
+  },
+  "dependencies": {
+    "gulp-notify": "^1.3.1"
+  }
+}

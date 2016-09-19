@@ -1,0 +1,38 @@
+{# master.twig #}
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Twig Gulp Template</title>
+    <!-- style gets replaced on runtime via gulp -->
+    <link href="styles/app.css"  rel="stylesheet">
+  </head>
+  <body>
+    <!-- body -->
+    {% block header %}
+      {% include "../_partials/header.twig" %}
+    {% endblock %}
+    
+    {% block containerpage %}
+
+      {% block page %}
+      {% endblock %}
+      
+    {% endblock %}
+
+    {% block footer %}
+      {% include "../_partials/footer.twig" %}
+    {% endblock %}
+    <!-- /body -->
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
